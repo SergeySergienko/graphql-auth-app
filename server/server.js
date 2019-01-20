@@ -7,7 +7,7 @@ const passport = require("passport");
 const passportConfig = require("./services/auth");
 const MongoStore = require("connect-mongo")(session);
 const schema = require("./schema/schema");
-const { dbuser, dbpassword } = require("../creds");
+const { dbuser, dbpassword } = require("../.env");
 
 // Create a new Express application
 const app = express();
